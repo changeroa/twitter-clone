@@ -21,14 +21,14 @@ const userSchema = mongoose.Schema(
       required: true,
       unique: true,
     },
-    follwers: [
+    followers: [
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
         default: [],
       },
     ],
-    follwing: [
+    following: [
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
